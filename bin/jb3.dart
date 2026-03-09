@@ -9,9 +9,11 @@ void main() {
     tebakan = int.parse(stdin.readLineSync()!);
 
     if (tebakan == angkaBenar) {
-      print("YEYYY!!! Tebakan benar!");
+      print("YEYYY! Tebakan benar.");
+    } else if (tebakan < angkaBenar) {
+      print("UPSS!!! Terlalu kecil!");
     } else {
-      print("HUHUHU, Tebakan salah!");
+      print("HUHUHU, Terlalu besar!");
     }
   }
 }
