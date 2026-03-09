@@ -1,8 +1,17 @@
 import 'dart:io';
 
 void main() {
-  print("Masukkan angka:");
-  int angka = int.parse(stdin.readLineSync()!);
+  int angkaBenar = 28;
+  int tebakan = 0;
 
-  print("Angka yang kamu masukkan: $angka");
+  while (tebakan != angkaBenar) {
+    print("Masukkan tebakan angka:");
+    tebakan = int.parse(stdin.readLineSync()!);
+
+    if (tebakan == angkaBenar) {
+      print("YEYYY!!! Tebakan benar!");
+    } else {
+      print("HUHUHU, Tebakan salah!");
+    }
+  }
 }
